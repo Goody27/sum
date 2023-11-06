@@ -17,11 +17,10 @@ permissions:
 jobs:
   build:
     
-    example_matrix:
-      strategy:
-        matrix:
-          version: ['1.16.0-rc.0', '1.15.7']
-
+  example_matrix:
+    strategy:
+      matrix:
+        version: [1.16.0-rc.0, 1.15.7]
     name: Build and test
     runs-on: ubuntu-latest
 
